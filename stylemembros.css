@@ -1,0 +1,229 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+Garamond:wght@300&family=Geo&display=swap');
+
+:root {
+    --cor1: #caf0f8;
+    --cor2: #adf4cb;
+    --cor3: #90ef90;
+    --cor4: #4de448;
+    --cor5: #85d800;
+    --cor6: #c4c700;
+    --cor7: #b67c00;
+    --cor8: #8a3802;
+    --cor9: #5e0903;
+    --cor10:#D36135;  
+    --font1: 'Geo', sans-serif;
+    --font2: 'Cinzel', serif;
+    --font3: 'Cormorant Garamond', serif;
+}
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    font-family: var(--font1);
+    font-size: 1em;
+    color: black;
+    justify-content: center;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body::-webkit-scrollbar {
+    width: 6px;
+}    body::-webkit-scrollbar-track {
+        background-color: var(--cor1);
+    }    body::-webkit-scrollbar-thumb {
+        background-color: white; border-radius: 10px; border: 2px solid pink;
+    }
+header {
+    max-width: 100%;
+    background-image: url(./imagens/catedral.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    height: 100px;
+}
+.botao1 {
+    background-color: transparent;
+    width: 100px;
+    height: 40px;
+    border: none;
+    font-family: var(--font1);
+    font-weight: 400;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    margin: 20px;
+}
+.botao1:hover {
+    background-color: darkgray;
+    color: black;
+    font-style: italic;
+    text-decoration: underline;
+    transition-duration: 1s;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px;
+}
+.text-header {
+    color:white;
+    font-family: var(--font1);
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+}
+.botao2 {
+    background-color: transparent;
+    width: 100px;
+    height: 40px;
+    border: none;
+    font-family: var(--font1);
+    font-weight: 400;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    margin: 20px;
+}
+.botao2:hover {
+    background-color: darkgray;
+    color: black;
+    font-style: italic;
+    text-decoration: underline;
+    transition-duration: 1s;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px;
+    margin-left: 10px;
+}
+.titulo {
+    font-family: var(--font2);
+    font-size: 1.5em;
+    text-align: center;
+    padding: 15px;
+
+}
+.div-principal {
+    background-color: transparent;
+    font-family: var(--font3);
+    max-width: 555px;
+    max-height: 600px;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.padrao-img {
+    border: 1px solid black;
+    max-width: 1000px;
+    max-height: 600px;
+    background-color: rgba(0, 0, 0, 0.363);
+    color: white;
+}
+.padrao {
+    border: 1px solid black;
+    max-width: 1000px;
+    max-height: 600px;
+    background-color: #ffffff00;
+}
+.primeiro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+.nome {
+    font-family: var(--font2);
+    font-size: 1.2em;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: underline;
+    font-style: italic;
+}
+.foto {
+    height: 50px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+.box {
+    border: 1px solid black;
+}
+.box-demo {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 15px;
+    font-weight: 900;
+}
+.box-work {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 15px;
+    font-weight: 900;
+}
+.fundo-img1 {
+    background-image: url(./imagens/estatuas.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 50px;
+    box-shadow: inset 0px -1px 10px 1px black;
+}
+.fundo-img2 {
+    background-image: url(./imagens/capacete.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 50px;
+    box-shadow: inset 0px -1px 10px 1px black;
+}
+.fundo-img3 {
+    background-image: url(./imagens/fogueira.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding: 50px;
+    box-shadow: inset 0px -1px 10px 1px black;
+}
+.fundo-branco {
+    background-image: linear-gradient(to top, white, gray);
+    padding: 50px;
+}
+.div-roda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background-color: black;
+}
+.rodape {
+   
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-family: var(--font3);
+    font-size: 15px;
+}
+.roda-img {
+    height: 100px;
+}
